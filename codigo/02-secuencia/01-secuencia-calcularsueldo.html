@@ -16,17 +16,42 @@ sueldo básico, el sueldo bruto y el sueldo neto de un trabajador.
 
 
     //Declarar las variables
+    	var basico;
+    	var bruto;
+    	var neto;
+    	var horas;
+    	var tarifa;
+    	var bonificacion;
+    	var descuento;
+    	
+
 
 
     //Ingreso de datos
+
+    	horas = prompt ("Ingresa las horas trabajadas");
+    	tarifa = prompt("ingresa la tarifa");
 
 
 
     //Procesamiento
 
+    	horas = parseInt(horas);
+    	tarifa = parseInt(tarifa);
 
+    	basico = horas*tarifa
+
+    	bruto = basico*1.20
+
+    	neto = bruto*0.90
 
     // Salida de Datos
+
+    	document.write("El sueldo basico es: " + basico);
+    	document.write("<br>");
+    	document.write("El sueldo bruto es: " + bruto);
+    	document.write("<br>");
+    	document.write("El sueldo neto es: " + neto)
 
 
 
